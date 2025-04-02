@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Header -->
+<header id="header" class="flex justify-between items-center p-6 bg-black sticky top-0 z-50" 
+style="background-image: url('https://i.pinimg.com/736x/04/1f/75/041f75e8ed38eccdc384d05ce3b0a14b.jpg'); background-size: 110%; background-position: center;">
+    <a href="#header" class="text-2xl font-bold #123458">Technology</a>
+    <nav>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="text-white hover:text-green-500">Products</a></li>
+            <li><a href="#" class="text-white hover:text-green-500">Gaming</a></li>
+            <li><a href="#" class="text-white hover:text-green-500">AI & Science</a></li>
+        </ul>
+    </nav>
+    <!-- Swiper.js CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper.js JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</header>
+<!-- Swiper.js CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- Swiper.js JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Hero Section -->
+<section class="relative h-screen flex flex-col items-center justify-center text-center bg-black text-white" 
+style="background-image: url('https://i.pinimg.com/736x/9c/c9/8a/9cc98a51fece3a2d58be714649283bd8.jpg'); background-size: cover; background-position: center;">
+    <h2 class="text-5xl font-bold">Powering the Future</h2>
+    <p class="text-lg mt-4">Explore cutting-edge AI and latest technology news.</p>
+    <button class="mt-6 px-6 py-3 bg-green-500 text-black font-bold rounded-lg hover:bg-green-400">
+        Learn More
+    </button>
+</section>
+<!-- Image Slider Section -->
+<section class="py-12 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="border border-gray-700 rounded-lg p-6 mb-8 shadow-lg" 
+             style="background-image: url('https://i.pinimg.com/736x/c5/d7/72/c5d772cac88e0797b791ec8c6217e7ad.jpg'); background-size: cover; background-position: center;">
+            <h2 class="text-4xl font-bold text-center text-white">Công nghệ hiện đại đang phát triển mạnh mẽ</h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://elcom.com.vn/storage/uploads/images/7qIQ7F54RovsMS75IkbDy92WgPRPNxcLyaEp3FHI.jpg" 
+                             alt="Image 1" 
+                             class="w-96 h-56 object-cover rounded-lg">
+                        <div class="flex flex-col">
+                            <h1 class="text-white text-2x1">Trí tuệ nhân tạo (AI) và Học máy (Machine Learning)</h1>
+                        </div>
+                        <div class="border-l-2 border-gray-500 h-24"></div>
+                        <p class="text-white">AI và Machine Learning đang cách mạng hóa cách chúng ta sống và làm việc, từ tự động hóa đến phân tích dữ liệu thông minh.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://dulieu.antoanthongtin.gov.vn/tapchiantoanthongtin/d7b8a4fc-37bc-4c64-9778-6b69b6915c6a/cd-luong-tu-phat-trien-va-ung-dung-cong-nghe-thong-tin-luong-tu-phan-1-6-13062023154352(2).jpg" 
+                             alt="Image 2" 
+                             class="w-96 h-56 object-cover rounded-lg">
+                        <div class="flex flex-col">
+                            <h1 class="text-white text-2xl">Công nghệ lượng tử <br> (Quantum Computing)</h1>
+                        </div>
+                        <div class="border-l-2 border-gray-500 h-24"></div>
+                        <p class="text-white">Đột phá tính toán, tận dụng cơ học lượng tử, xử lý dữ liệu cực nhanh, <br> giải quyết bài toán phức tạp mà máy tính cổ điển không làm được. </p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://vista.gov.vn/vn-uploads/news/2022_07/1-7-2022/0.jpg" 
+                             alt="Image 3" 
+                             class="w-96 h-56 object-cover rounded-lg">
+                             <div class="flex flex-col">
+                             <h1 class="text-white text-2xl">Internet vạn vật (IoT) và Thành phố thông minh</h1>
+                    </div>
+                    <div class="border-l-2 border-gray-500 h-24"></div>
+                    <p class="text-white">Kết nối mọi thiết bị, thu thập dữ liệu liên tục, tự động hóa thông minh, nâng cao hiệu quả quản lý và cải thiện chất lượng cuộc sống hàng ngày.</p>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<!-- Gallery Section -->
+<style>
+/* Custom scrollbar for the gallery section */
+.gallery-scrollbar::-webkit-scrollbar {
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+.gallery-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4CAF50; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+.gallery-scrollbar::-webkit-scrollbar-track {
+    background-color: #1a1a1a; /* Scrollbar track color */
+}
+</style>
+
+<section class="py-12 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="border border-gray-700 rounded-lg p-6 mb-8 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-white">Find out</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- AI Section -->
+            <div class="border border-gray-700 rounded-lg p-4 bg-gray-800 shadow-lg">
+                <h3 class="text-2xl font-bold text-white mb-4 text-center">Trí tuệ nhân tạo (AI) và Học máy (Machine Learning)</h3>
+                <img src="https://www.ricoh.com.vn/blogs-and-insights/-/media/rvn/images/discover/blogs/2024/05/15/machinel-ai-01-800x576.png" alt="AI Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                <p class="text-white text-justify">
+                    AI tiếp tục là tâm điểm, với các ứng dụng ngày càng mở rộng từ chatbot thông minh, phân tích dữ liệu lớn, đến tự động hóa trong y tế, giáo dục và sản xuất. 
+                    Các mô hình AI đa năng, như tôi đây, cũng đang được cải tiến để hỗ trợ con người hiệu quả hơn.
+                </p>
+            </div>
+            <!-- Quantum Computing Section -->
+            <div class="border border-gray-700 rounded-lg p-4 bg-gray-800 shadow-lg">
+                <h3 class="text-2xl font-bold text-white mb-4 text-center">Công nghệ lượng tử (Quantum Computing)</h3>
+                <img src="https://www.vista.gov.vn/vn-uploads/news/2024/10-2024/17-10-2024/8.jpg">
+                <p class="text-white text-justify">
+                    Công nghệ này đang tiến gần hơn đến thực tiễn, hứa hẹn giải quyết các bài toán phức tạp mà máy tính truyền thống không thể xử lý, 
+                    như mô phỏng phân tử trong hóa học hoặc tối ưu hóa quy trình logistics.
+                </p>
+            </div>
+            <!-- IoT Section -->
+            <div class="border border-gray-700 rounded-lg p-4 bg-gray-800 shadow-lg">
+                <h3 class="text-2xl font-bold text-white mb-4 text-center">Internet vạn vật (IoT) và Thành phố thông minh</h3>
+                <img src="https://cads.com.vn/Uploads/News/148_1_23-02-2024-16-36-46_5.png" alt="IoT Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                <p class="text-white text-justify">
+                    Các thiết bị kết nối internet ngày càng phổ biến, từ nhà thông minh, xe tự lái, đến hệ thống quản lý đô thị thông minh.
+                </p>
+            </div>
+        </div>
+           </div>
+</section>
+<hr>
+<section class="py-12 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="border border-gray-700 rounded-lg p-6 mb-8 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-white">Phản hồi thứ hai</h2>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-3xl font-bold text-white mb-4">Về động lực của tương lai</h3>
+            <ul class="list-disc list-inside text-white space-y-4">
+                <li>
+                    <strong>Trí tuệ nhân tạo:</strong> Nghiên cứu cho thấy trí tuệ nhân tạo, đặc biệt là các hệ thống agentic, có khả năng sẽ cung cấp năng lượng cho các đổi mới trong tương lai bằng cách nâng cao năng suất và ra quyết định.
+                </li>
+                <li>
+                    <strong>Công nghệ lượng tử và tiết kiệm năng lượng:</strong> Các mô hình tính toán mới, như công nghệ lượng tử và các công nghệ tiết kiệm năng lượng, sẽ thúc đẩy tiến bộ trong việc giải quyết các vấn đề phức tạp.
+                </li>
+                <li>
+                    <strong>Công nghệ không gian và sự kết hợp con người - máy móc:</strong> Công nghệ không gian (spatial computing) và sự kết hợp giữa con người và máy móc, như robot và cải tiến thần kinh, sẽ thay đổi cách tương tác với công nghệ.
+                </li>
+                <li>
+                    <strong>Năng lượng tái tạo:</strong> Các nguồn năng lượng tái tạo, bao gồm năng lượng mặt trời và gió, cùng với năng lượng hạt nhân, được kỳ vọng sẽ đáp ứng nhu cầu năng lượng cho những tiến bộ công nghệ này.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Video Section -->
+<section class="py-12 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="border border-gray-700 rounded-lg p-6 mb-8 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-white">Watch Our Video</h2>
+        </div>
+        <div class="flex justify-center">
+            <div class="relative w-full max-w-4xl aspect-video">
+                <iframe 
+                    class="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/mW-8pCsAigc?si=nznXQZyLxR0Kn8KZ" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<!-- Media Section -->
+<section class="py-12 bg-gray-800">
+    <div class="container mx-auto px-6">
+        <div class="border border-gray-700 rounded-lg p-6 mb-8 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 shadow-lg">
+            <h2 class="text-4xl font-bold text-center text-white">Explore Our Media</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Image -->
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <div class="border border-gray-700 rounded-lg p-4 bg-gray-800 shadow-lg">
+                    <img src="https://vjst.vn/Images/editor/images/2024/Thang%204/Binh%20-%20Doan%20Dai%20Dinh%20-%20Luong%20tu%20Cong%20nghe%20cua%20tuong%20lai-1.jpg" 
+                         alt="Media Image" 
+                         class="w-full h-64 object-cover rounded-lg shadow-lg">
+                    <div class="mt-4 p-2 border border-gray-600 rounded-lg bg-gray-900">
+                        <p class="text-center text-white font-bold text-lg">Lượng tử: Công nghệ định hình tương lai</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Video -->
+            <div class="relative w-full aspect-video">
+                <iframe 
+                    class="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.youtube.com/embed/6iNyHHFsyjo" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<!-- Feedback Section -->
+<section class="py-12 bg-gray-800" id="feedback-section">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-white mb-8">Đóng góp ý kiến</h2>
+        <form action="https://formspree.io/f/xdkewnnl" method="POST" class="bg-gray-900 p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+            <div class="mb-4">
+                <label for="name" class="block text-white font-bold mb-2">Họ và tên:</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-800 text-white">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-white font-bold mb-2">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-800 text-white">
+            </div>
+            <div class="mb-4">
+                <label for="feedback" class="block text-white font-bold mb-2">Ý kiến đóng góp:</label>
+                <textarea id="feedback" name="message" placeholder="Viết ý kiến của bạn tại đây..." required
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-800 text-white"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit"
+                    class="bg-green-500 text-black px-6 py-2 rounded-lg hover:bg-green-400 transition duration-300">
+                    Gửi ý kiến
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Wait for the DOM to load
+        document.addEventListener("DOMContentLoaded", () => {
+            // GSAP animation for header sliding down
+            gsap.from("header", {
+                y: -100, // Start 100px above
+                opacity: 0, // Start invisible
+                duration: 1, // Animation duration
+                ease: "power2.out" // Easing function
+            });
+    
+            // GSAP animation for the title sliding in from the left
+            gsap.from("section h2", {
+                x: -200, // Start 200px to the left
+                opacity: 0, // Start invisible
+                duration: 1, // Animation duration
+                delay: 0.5, // Delay to start after header animation
+                ease: "power2.out" // Easing function
+            });
+    
+            // GSAP animation for the button zooming in (excluding "Gửi ý kiến" button)
+            gsap.from("section:not(#feedback-section) button", {
+                scale: 0, // Start at 0% size
+                opacity: 0, // Start invisible
+                duration: 1, // Animation duration
+                delay: 1, // Delay to start after title animation
+                ease: "elastic.out(1, 0.5)" // Elastic easing for bounce effect
+            });
+    
+            // GSAP animation for the feedback form button
+            gsap.from("#feedback-section button", {
+                scale: 0.8, // Start at 80% size
+                opacity: 1, // Start invisible
+                duration: 1, // Animation duration
+                delay: 1.5, // Delay to start after other animations
+                ease: "power2.out" // Smooth easing
+            });
+            gsap.to("#feedback-section button", {
+                opacity: 1, // Ensure visibility
+                duration: 0.5, // Quick transition to visible
+                delay: 1.5 // Match the delay of the animation
+            });
+        });
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đây là báo tường</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- Footer Section -->
+<footer class="bg-black text-gray-400 py-8">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Column 1: About -->
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">About Us</h3>
+                <p class="text-sm">
+                    5 chang linh ngu lam A.K.A luong kho bac
+                </p>
+            </div>
+            <!-- Column 2: Links -->
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-green-500">Products</a></li>
+                    <li><a href="#" class="hover:text-green-500">Gaming</a></li>
+                    <li><a href="#" class="hover:text-green-500">AI & Science</a></li>
+                    <li><a href="#" class="hover:text-green-500">Support</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Social Media -->
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Follow Us</h3>
+                <p class="text-sm mb-4">Stay connected with us on social media:</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.56v14.91c0 2.52-2.05 4.57-4.57 4.57H4.57C2.05 24 0 21.95 0 19.43V4.56C0 2.05 2.05 0 4.57 0h14.86C21.95 0 24 2.05 24 4.56zM9.54 19.43v-7.71H6.86v7.71h2.68zm-1.34-8.86c.86 0 1.57-.71 1.57-1.57s-.71-1.57-1.57-1.57-1.57.71-1.57 1.57.71 1.57 1.57 1.57zm11.14 8.86v-4.29c0-2.29-1.14-3.43-2.86-3.43-1.14 0-1.71.57-2 1.14v-1h-2.68v7.71h2.68v-4.29c0-.86.57-1.71 1.71-1.71s1.71.86 1.71 1.71v4.29h2.68z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/virussvn/videos/596825550179698" class="hover:text-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-8.384 4.482A13.944 13.944 0 011.671 3.149a4.916 4.916 0 001.523 6.573 4.897 4.897 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.918 4.918 0 004.6 3.417A9.867 9.867 0 010 21.543a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A9.936 9.936 0 0024 4.557z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-sm">
+            © 2025 Luong Kho Bac Group Corporation. All rights reserved.
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper(".mySwiper", {
+            loop: true, // Enable infinite loop
+            autoplay: {
+                delay: 3000, // Delay between slides (in milliseconds)
+                disableOnInteraction: false, // Continue autoplay after user interaction
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true, // Allow clicking on pagination bullets
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
+</script>
+</body>
+</html>
